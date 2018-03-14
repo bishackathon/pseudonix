@@ -1,4 +1,4 @@
-var firebase = {
+var config = {
     apiKey: "AIzaSyDeVDR-CRt3wIJ7L__IO6lSqdN51ehH67o",
     authDomain: "pseudonix-bischool.firebaseapp.com",
     databaseURL: "https://pseudonix-bischool.firebaseio.com",
@@ -7,4 +7,4 @@ var firebase = {
     messagingSenderId: "621138785515"
 };
 
-export default { firebase }; 
+export default config; 

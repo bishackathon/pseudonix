@@ -8,9 +8,12 @@ const mapStateToProps = state => {
 class NavbarItem extends Component {
 	render() {
 		const forLoc = this.props.for;
-		const active = this.props.location.pathname == forLoc ? " active": "";
+		if (this.props.classWhenActive) {
+			const classWhenActive = this.props.classWhenActive;
+		}
+		const active = this.props.location.pathname == forLoc ? " active ": "";
 		return (
-			<li className={this.props.className + active}>
+			<li className={this.props.className + active + this.classWhenActive}>
 				{this.props.children}
 			</li>
 		)

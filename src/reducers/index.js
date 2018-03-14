@@ -1,10 +1,15 @@
 const initialState = {
-	insurance: {}
+	insurance: {
+		loading: false,
+		success: false
+	}
 }
 const rootReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case "UPDATE_INFO":
-			return {...state, insurance: {...action.payload}};
+		case "LOADING":
+			return {...state, insurance: {...state.insurance, loading: true}};
+		case "SUCCESS":
+			return {...state, insurance: {success: true, loading: false}}
 		default:
 			return state;
 	}

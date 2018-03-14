@@ -22,7 +22,7 @@ class About extends Component {
               We will be the most value creating and admired risk solutions company in India, with a global footprint.
               </p>
                 <p>
-                  <Link to="/pricing"><button className="btn btn-success btn-lg">Get Started</button></Link>
+                  <Link to="/pricing"><button className="btn btn-warning btn-lg">Pricing</button></Link>
                 </p>
             </div>
           </div>

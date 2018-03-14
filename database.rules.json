@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "group2": {
+      ".read": "true",
+        ".write": "true"
+    },
+      "insurance": {
+      ".read": "true",
+        ".write": "true"
+    },
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}

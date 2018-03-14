@@ -34,7 +34,7 @@ class NavbarCustom extends Component {
 			      </li>*/}
 			    </ul>
 			    <ul className="navbar-nav">
-			    	<NavbarItem className="nav-item" for="/start">
+			    	<NavbarItem className="nav-item" for="/start" classWhenActive="disabled">
 			    		<Link className="nav-link" to="/start"><button className="btn btn-success">Start Now</button></Link>
 			    	</NavbarItem>
 			    </ul>
